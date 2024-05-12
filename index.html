@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Productivity App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 30px;
+    }
+   .navbar-brand {
+      margin-right: auto;
+    }
+    .navbar-brand h1 {
+      margin-top: 0;
+    }
+    .navbar img {
+      max-height: 50px;
+    }
+    @media (max-width: 576px) {
+      .navbar-brand {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+   .main{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 100px;
+   }
+   h1{
+    margin-top: 200px;
+   }
+  #main2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   margin-top: 350px;
+}
+    
+    .card {
+  width:450px;
+  height:500px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: $color-primary-white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color:#a6b1e1;
+  }
+
+  .footer {
+    background-color: #a6b1e1; /* Changed background color */
+    color: #fff;
+    padding: 20px 0; /* Reduced padding */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px; /* Reduced padding */
+}
+
+.footer-section h2 {
+    color: #fff;
+    font-size: 25px; /* Set font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-section p {
+    font-size: 20px; 
+    line-height: 1.6;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 5px; /* Reduced padding */
+    margin-bottom: 5px; /* Reduced margin */
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 20px; 
+}
+#part2{
+margin-top: 100px;
+width: 800px;
+line-height: 50px;
+padding: 20px;
+}
+h4{
+  font-size: 40px;
+}
+svg {
+  width: 100%; height: 100%;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #a6b1e1;
+  font-size: 70px;
+}
+@keyframes stroke {
+  0%   {
+    fill: rgba(72,138,20,0); stroke:#a6b1e1;
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+  }
+  70%  {fill: rgba(72,138,20,0); stroke: #a6b1e1; }
+  80%  {fill: rgba(72,138,20,0); stroke:#a6b1e1; stroke-width: 3; }
+  100% {
+    fill:#a6b1e1; stroke: rgba(54,95,160,0); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+  }
+}
+
+
+  </style>
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+  
+    <img src="icon3.jpg" alt="App Logo" style="width: 70px;height: 60px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p style="color:#8ec5fc;">Home</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php"><p style="color:#8ec5fc;">Todo</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="schedule.html"><p style="color:#8ec5fc;">Schedule</p></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main">
+ 
+  <svg viewBox="0 0 1000 300">
+    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+      DAILY PRODUCTIVITY
+    </text>
+  </svg>  
+    
+ 
+    
+      <img src="main.jpg" alt="Image" style="width: 600px;">
+    
+
+  </div>
+<center></center>
+  <div id="main2">
+    <div class = "card">
+      <img src="img.jpg">
+      <div class="card-content">
+        <h2>
+          STUDYING
+        </h2>
+     
+      </div>
+    </div>
+  
+    <div class = "card">
+      <img src="img2.jpg" style="height: 300px;">
+      <div class="card-content">
+        <h2>
+          FITNESS
+        </h2>
+     
+      </div>
+    </div>
+  
+  
+    <div class = "card">
+      <img src="img3.jpg">
+      <div class="card-content">
+        <h2>
+          DIETS
+        </h2>
+     
+      </div>
+    </div>    
+          </div>
+<center>
+ <div id="part2">
+ 
+    <img src="left.jpg" alt="Your Image" style="width: 500px;">
+  
+
+    <h4>Time consuming while using productivity plan</h4>
+    <p style="font-size:25px"> Each task becomes a precious jewel, gleaming with the promise of accomplishment yet demanding its tribute in the currency of time. In this dance with destiny, we don the cloak of efficiency, wielding the sword of focus to carve our path through the wilderness of distractions. For every moment spent in the pursuit of productivity is a tribute to the grand tapestry of our ambitions, each hour invested a testament to the legacy we strive to weave into the fabric of time itself.
+
+
+
+
+
+
+
+    </p>
+ <br><br>
+    <img src="right.jpg" alt="Your Image" style="width: 500px;">
+ 
+  
+    <h4>Why daily productivity plan needed?</h4>
+    <p style="font-size:25px"> In this enchanted realm of productivity, every task becomes a brushstroke on the canvas of our aspirations, every goal a sparkling gem in the crown of our achievements. It's a journey through the enchanted forest of possibilities, where each step is guided by the compass of purpose and fueled by the fire of passion.</p>
+  
+</div>
+</center>
+
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h3>About Us</h3>
+              <p>This tutorial application aims to provide valuable resources and learning materials for users to enhance their skills and knowledge.</p>
+              <div class="contact">
+                  <span><i class="fas fa-envelope"></i> Email: info@tutorialapp.com</span>
+              </div>
+          </div>
+      
+          <div class="footer-section contact-form">
+              <h3>Contact Us</h3>
+              <form action="#" method="post">
+                  <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                  <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 TutorialApp. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+
+<!-- Your content goes here -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
